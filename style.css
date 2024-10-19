@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 268px;
+    height: 33px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ababab;
+}
+
+.nav-links a:hover {
+    color: #00b39b;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 70px;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.hero h1 {
+    color: #00b39b;
+    font-size: 2.125rem;
+    margin: 1em 0;
+}
+
+.hero-text {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text p {
+    width: 48%;
+    color: #747474;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 3.75rem auto;
+    padding: 0 20px;
+}
+
+.service-card {
+    width: 31%;
+    border-radius: 10px;
+    padding: 2em 1.5em;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.for-patients {
+    background: #00ccb1;
+}
+
+.for-doctors {
+    background: #3d83df;
+}
+
+.for-clinics {
+    background: #1b2734;
+}
+
+.service-card h2 {
+    color: white;
+    font-size: 1.625em;
+    margin-bottom: 0.5em;
+}
+
+.service-card p {
+    color: white;
+    font-size: 1.125em;
+}
+
+/* Stats Section */
+.stats {
+    background: #e5faf8;
+    padding: 4em 0;
+}
+
+.stats-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+.stats-text {
+    width: 40%;
+}
+
+.stats-text h3 {
+    color: #00b39b;
+    font-size: 1.625em;
+    margin-bottom: 0.5em;
+}
+
+.stats-text p {
+    color: #747474;
+    margin-bottom: 1em;
+}
+
+.stats-grid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 5px;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.stat-card img {
+    width: 40px;
+}
+
+.stat-card h4 {
+    color: #00b39b;
+    font-size: 1.8125em;
+    margin: 0.5em 0;
+}
+
+.stat-card p {
+    color: #747474;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-text, .services, .stats-content {
+        flex-direction: column;
+    }
+
+    .hero-text p, .service-card, .stats-text, .stats-grid {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
